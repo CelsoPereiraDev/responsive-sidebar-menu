@@ -78,7 +78,7 @@ a{
 .l-navbar{
     position: fixed;
     top: 0;
-    left: 0%;
+    left: -30%;
     width: var(--nav-width);
     height: 100vh;
     background-color: var(--first-color);
@@ -127,9 +127,25 @@ a{
     font-size: 1.25rem;
 }
 /*===== SHOW NAVBAR MOVIL =====*/
-
+.show{
+    left:0;
+}
 
 /*===== ADD PADDING BODY MOVIL =====*/
-
+.body-pd{
+    padding-left: calc(var(--nav-width) + 1rem);
+}
 
 /*===== ACTIVE LINKS =====*/
+.active{
+    color: var(--white-color);
+}
+
+.active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 32px;
+    background-color: var(--white-color);
+}
